@@ -9,6 +9,5 @@ class Solution {
             b = temp;
         }
         return a;
-        
     }
 }
