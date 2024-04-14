@@ -5,7 +5,7 @@ class Solution {
             if (c == '(' || c == '{' || c == '[') {
                 stack.push(c);
             } else {
-                if (stack.empty()) {
+                if (stack.isEmpty()) {
                     return false;
                 }
                 if (c == ')' && stack.peek() == '(') {
@@ -19,6 +19,6 @@ class Solution {
                 }
             }
         }
-        return stack.empty();
+        return stack.isEmpty();
     }
 }
