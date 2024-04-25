@@ -7,7 +7,7 @@ class Solution {
       
         for (int i = 0; i < N; i++) {
             int curr = s.charAt(i) - 'a';
-            System.out.println(curr);
+            //System.out.println(curr);
             int best = 0;
             for (int prev = 0; prev < 26; prev++) {
                 if (Math.abs(prev - curr) <= k) {
