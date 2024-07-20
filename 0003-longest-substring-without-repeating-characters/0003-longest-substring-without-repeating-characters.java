@@ -13,7 +13,6 @@ class Solution {
                 mp.put(s.charAt(i),i);
                 
             }
-
         }
         return ans;
     }
