@@ -14,21 +14,20 @@
  * }
  */
 class Solution {
-    public void allPathSum(TreeNode root,int targetSum,List<Integer> path,List<List<Integer>> list){
-        if(root == null){
-            return ;
+    public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
+        List<List<Integer>> result = new ArrayList<>();
+        pathSum(root,targetSum,new ArrayList(),result);
+        return result;
+    }
+    public void pathSum(TreeNode root, int sum, List<Integer>path,List<List<Integer>>result){
+        if(root==null){
+            return;
         }
         path.add(root.val);
-        if(root.left == null && root.right == null && root.val == targetSum){
-            list.add(new ArrayList<Integer>(path));
+        if(root.left == null && root.right==null && sum == root.val){
+            result.add(path);
         }
-        allPathSum(root.left,(targetSum - root.val),path,list);
-        allPathSum(root.right,(targetSum - root.val),path,list);
-        path.remove(path.size()-1);
-    }
-    public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
-        List<List<Integer>> list = new ArrayList<>();
-        allPathSum(root,targetSum, new ArrayList<Integer>(),list);
-        return list;
+        pathSum(root.left,sum-root.val,new ArrayList(path),result);
+        pathSum(root.right,sum-root.val,new ArrayList(path),result);
     }
 }
