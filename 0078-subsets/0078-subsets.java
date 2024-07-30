@@ -1,17 +1,17 @@
 class Solution {
+    List<List<Integer>> result = new ArrayList<>();
     public List<List<Integer>> subsets(int[] nums) {
-        List<List<Integer>> result = new ArrayList<>();
-        int n = nums.length;
-        int subsetCount = 1 << n;
-        for (int i = 0; i < subsetCount; ++i) {
-            List<Integer> subset = new ArrayList<>();
-            for (int j = 0; j < n; ++j) {
-                if ((i & (1 << j)) != 0) {
-                    subset.add(nums[j]);
-                }
-            }
-            result.add(subset);
-        }
+        findSubset(nums,0, new ArrayList<>());
         return result;
+    }
+    public void findSubset(int nums[], int index, List<Integer> sublist){
+        if(index == nums.length){
+            result.add(new ArrayList<>(sublist));
+            return;
+        }
+        sublist.add(nums[index]);
+        findSubset(nums, index+1, sublist);
+        sublist.remove(sublist.size()-1);
+        findSubset(nums, index+1,sublist);
     }
 }
