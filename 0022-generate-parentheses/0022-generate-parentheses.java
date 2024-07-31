@@ -1,20 +1,20 @@
 class Solution {
-    public static List<String> generate(String s, int start, int end, ArrayList<String> list){
-        if(start == 0 && end == 0){
-            list.add(s);
-            return list;
+    public static void generate(String s, int open, int close,int total, List<String> ans){
+        if(s.length() == 2*total){
+            ans.add(s);
+            return;
         }
-        if(start !=0){
-            generate(s+"(",start-1,end,list);
+        if(open < total){
+            generate(s+"(",open+1,close,total,ans);
         }
-        if(end > start){
-            generate(s+")",start,end-1,list);
+        if(close < open){
+            generate(s+")",open,close+1,total,ans);
         }
-        
-            return list;
     }
     
     public List<String> generateParenthesis(int n) {
-        return generate("",n,n,new ArrayList<>());
+        List<String> ans = new ArrayList<>();
+         generate("",0,0,n,ans);
+             return ans;
     }
 }
