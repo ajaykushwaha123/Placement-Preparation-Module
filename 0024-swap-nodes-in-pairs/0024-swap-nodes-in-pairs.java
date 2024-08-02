@@ -10,13 +10,21 @@
  */
 class Solution {
     public ListNode swapPairs(ListNode head) {
-        if(head == null || head.next == null){
-            return head;
+        if(head == null){
+            return null;
         }
-        ListNode temp = head.next;
-        head.next = swapPairs(temp.next);
-        temp.next = head;
-        return temp;
-        
+        ListNode node = head;
+        while(node.next != null){
+            int num = node.val;
+            node.val = node.next.val;
+            node.next.val = num;
+            if(node.next.next != null){
+                node = node.next.next;
+            }
+            else{
+                node = node.next;
+            }
+        }
+        return head;
     }
 }
