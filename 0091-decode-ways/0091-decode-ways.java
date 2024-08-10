@@ -4,24 +4,22 @@ class Solution {
             return 0;
         }
 
-        int n = s.length();
-        int[] dp = new int[n + 1];
-        dp[0] = 1;
-        dp[1] = 1;
-
-        for (int i = 2; i <= n; ++i) {
-            int oneDigit = s.charAt(i - 1) - '0';
-            int twoDigits = Integer.parseInt(s.substring(i - 2, i));
-
-            if (oneDigit != 0) {
-                dp[i] += dp[i - 1];
+        int dp1 = 1;
+        int dp2 = s.charAt(0) == '0'? 0:1;
+        for(int i = 2; i <= s.length(); i++){
+            int first = Integer.valueOf(s.substring(i-1,i));
+            int second = Integer.valueOf(s.substring(i-2,i));
+            int dp = 0;
+            if(first >= 1 && first <= 9){
+                dp += dp1;
             }
-
-            if (10 <= twoDigits && twoDigits <= 26) {
-                dp[i] += dp[i - 2];
+            if(second >= 10 && second <= 26){
+                dp += dp2;
             }
+            dp2 = dp1;
+            dp1 = dp;
+            
         }
-
-        return dp[n];
+        return dp1;
     }
 }
