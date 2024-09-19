@@ -3,10 +3,11 @@ class Solution {
         long l = 0;
         long r = (long)Math.sqrt(c);
         while(l <= r){
-            if((l*l + r*r) == c){
+            long num = l*l + r*r;
+            if(num == c){
                 return true;
             }
-            else if((l*l + r*r > c)){
+            else if(num > c){
                 r--;
             }
             else{
