@@ -11,5 +11,10 @@ Welcome to the Placement Preparation Module Repository, your one-stop destinatio
 ## Math
 |  |
 | ------- |
+| [0223-rectangle-area](https://github.com/ajaykushwaha123/Placement-Preparation-Module/tree/master/0223-rectangle-area) |
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/ajaykushwaha123/Placement-Preparation-Module/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
+## Geometry
+|  |
+| ------- |
+| [0223-rectangle-area](https://github.com/ajaykushwaha123/Placement-Preparation-Module/tree/master/0223-rectangle-area) |
 <!---LeetCode Topics End-->
