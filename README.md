@@ -12,9 +12,11 @@ Welcome to the Placement Preparation Module Repository, your one-stop destinatio
 |  |
 | ------- |
 | [0223-rectangle-area](https://github.com/ajaykushwaha123/Placement-Preparation-Module/tree/master/0223-rectangle-area) |
+| [0866-rectangle-overlap](https://github.com/ajaykushwaha123/Placement-Preparation-Module/tree/master/0866-rectangle-overlap) |
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/ajaykushwaha123/Placement-Preparation-Module/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
 ## Geometry
 |  |
 | ------- |
 | [0223-rectangle-area](https://github.com/ajaykushwaha123/Placement-Preparation-Module/tree/master/0223-rectangle-area) |
+| [0866-rectangle-overlap](https://github.com/ajaykushwaha123/Placement-Preparation-Module/tree/master/0866-rectangle-overlap) |
 <!---LeetCode Topics End-->
