@@ -14,6 +14,7 @@ Welcome to the Placement Preparation Module Repository, your one-stop destinatio
 | [0223-rectangle-area](https://github.com/ajaykushwaha123/Placement-Preparation-Module/tree/master/0223-rectangle-area) |
 | [0866-rectangle-overlap](https://github.com/ajaykushwaha123/Placement-Preparation-Module/tree/master/0866-rectangle-overlap) |
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/ajaykushwaha123/Placement-Preparation-Module/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
+| [1440-convert-integer-to-the-sum-of-two-no-zero-integers](https://github.com/ajaykushwaha123/Placement-Preparation-Module/tree/master/1440-convert-integer-to-the-sum-of-two-no-zero-integers) |
 ## Geometry
 |  |
 | ------- |
